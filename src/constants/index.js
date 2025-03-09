@@ -16,17 +16,24 @@ import {
   git,
   figma,
   docker,
+  django,
+  sql,
   meta,
   starbucks,
   tesla,
   shopify,
   carrent,
   DS1,
+  I2I1,
   DS2,
   DS3,
   jobit,
+  Ride,
   tripguide,
   threejs,
+  java,
+  python,
+  spring,
 } from "../assets";
 
 export const navLinks = [
@@ -65,6 +72,22 @@ const services = [
 
 const technologies = [
   {
+    name:"java",
+    icon:java,
+  },
+  {
+    name:"python",
+    icon:python,
+  },
+  {
+    name:"SpringBoot",
+    icon:spring,
+  },
+  {
+    name:"Django",
+    icon:django,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -84,38 +107,42 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: tailwind,
+  // },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
+    name: "SQL",
+    icon: sql,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
@@ -213,47 +240,48 @@ const projects = [
     source_code_link: "https://github.com/charantatineni",
   },
   {
-    name: "Job IT",
+    name: "I2I - Imagination to Image",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "AI Image Generation app called I2I, Built with React, TypeScript for a smooth, responsive UI. Powered by Supabase for seamless backend database and authentication! ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "llm",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: I2I1,
+    source_code_link: "https://github.com/charantatineni",
   },
   {
-    name: "Trip Guide",
+    name: "Ride",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A student ride sharing app that lets students to ride-share with other students. Built with Typescript, React, Vite. Used Supabase for auth and DataBase. ",
     tags: [
       {
-        name: "nextjs",
+        name: "supabase",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "microservices",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "restapi",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Ride,
+    source_code_link: "https://github.com/charantatineni",
   },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

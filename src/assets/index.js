@@ -9,6 +9,9 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
+import spring from "./tech/spring.svg";
+import sql from "./tech/sql.png";
+import django from "./tech/django.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -20,6 +23,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.svg";
+import python from "./tech/python.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,6 +36,8 @@ import DS1 from "./DS1.png";
 import DS2 from "./DS2.png";
 import DS3 from "./DS3.png"; 
 import jobit from "./jobit.png";
+import I2I1 from "./I2I1.png";
+import Ride from "./Ride.png"
 import tripguide from "./tripguide.png";
 
 export {
@@ -44,6 +51,8 @@ export {
   close,
   css,
   docker,
+  spring,
+  sql,
   figma,
   git,
   html,
@@ -55,6 +64,8 @@ export {
   tailwind,
   typescript,
   threejs,
+  java,
+  python,
   meta,
   shopify,
   starbucks,
@@ -63,6 +74,9 @@ export {
   DS1,
   DS2,
   DS3,
+  I2I1,
   jobit,
   tripguide,
+  Ride,
+  django,
 };

@@ -125,6 +125,78 @@
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+/* Floating effect for smooth movement */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-text {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Gradient effect similar to author's style */
+.animate-text {
+  background: linear-gradient(90deg, #06beb6, #48b1bf, #ff5f6d, #ffc371, #06beb6);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShine 6s linear infinite alternate;
+}
+
+/* Smooth looping gradient animation */
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Left to Right Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Stick with animated horizontal gradient */
+.animated-gradient-stick {
+  width: 3px; /* Keep it slim */
+  background: linear-gradient(90deg, #06beb6, #48b1bf, #ff5f6d, #ffc371);
+  background-size: 200% 100%;
+  animation: gradientShift 4s linear infinite alternate;
+}
+
+/* Head (Dot) with the same gradient animation */
+.animated-gradient-head {
+  width: 15px; /* Smaller size */
+  height: 15px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #06beb6, #48b1bf, #ff5f6d, #ffc371);
+  background-size: 200% 100%;
+  animation: gradientShift 4s linear infinite alternate;
+}
+
 
 @keyframes mulShdSpin {
   0%,
