@@ -22,23 +22,18 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import java from "./tech/java.svg";
 import python from "./tech/python.png"
-
-import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
 import DS1 from "./DS1.png";
-import DS2 from "./DS2.png";
-import DS3 from "./DS3.png"; 
-import jobit from "./jobit.png";
 import I2I1 from "./I2I1.png";
+import JAP from "./JAP.png";
 import Ride from "./Ride.png"
-import tripguide from "./tripguide.png";
+import CWHD from "./CWHD.png";
+import GS from "./GS.png";
+import HMS from "./HMS.png";
 
 export {
   logo,
@@ -63,20 +58,17 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
   java,
   python,
-  meta,
   shopify,
   starbucks,
   tesla,
-  carrent,
   DS1,
-  DS2,
-  DS3,
   I2I1,
-  jobit,
-  tripguide,
+  CWHD,
+  GS,
+  HMS,
+  JAP,
   Ride,
   django,
 };

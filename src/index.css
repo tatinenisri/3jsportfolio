@@ -181,7 +181,7 @@
 
 /* Stick with animated horizontal gradient */
 .animated-gradient-stick {
-  width: 3px; /* Keep it slim */
+  width: 4px; /* Keep it slim */
   background: linear-gradient(90deg, #06beb6, #48b1bf, #ff5f6d, #ffc371);
   background-size: 200% 100%;
   animation: gradientShift 4s linear infinite alternate;
@@ -189,12 +189,30 @@
 
 /* Head (Dot) with the same gradient animation */
 .animated-gradient-head {
-  width: 15px; /* Smaller size */
-  height: 15px;
+  width: 20px; /* Smaller size */
+  height: 20px;
   border-radius: 50%;
   background: linear-gradient(90deg, #06beb6, #48b1bf, #ff5f6d, #ffc371);
   background-size: 200% 100%;
   animation: gradientShift 4s linear infinite alternate;
+}
+
+.gradient-cursor {
+  background: linear-gradient(90deg, #06beb6, #48b1bf, #ff5f6d, #ffc371);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: cursorColorChange 2s linear infinite alternate;
+}
+
+/* ✅ Smooth Color Change Animation */
+@keyframes cursorColorChange {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 

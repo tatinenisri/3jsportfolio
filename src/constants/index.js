@@ -9,28 +9,21 @@ import {
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   django,
   sql,
-  meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
   DS1,
   I2I1,
-  DS2,
-  DS3,
-  jobit,
+  JAP,
+  CWHD,
+  GS,
+  HMS,
   Ride,
-  tripguide,
-  threejs,
   java,
   python,
   spring,
@@ -107,14 +100,6 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
   {
     name: "Node JS",
     icon: nodejs,
@@ -127,22 +112,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
   {
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
 ];
 
 const experiences = [
@@ -151,7 +124,7 @@ const experiences = [
     company_name: "George Mason University",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "August 2022 - May 2024",
+    // date: "August 2022 - May 2024",
     points: [
       "Built a web application for in-house project tracking using Java Spring Boot and advanced routing features of React, incorporating REST APIs for user authentication, creating, browsing, and tracking task status in real-time, within Agile Framework.",
       "Implemented routing to reduce load times by 75%, enabling seamless page transitions.",
@@ -165,7 +138,7 @@ const experiences = [
     company_name: "Exposys Datalabs",
     icon: shopify,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    // date: "March 2020 - April 2021",
     points: [
       "Built a web application for in-house project tracking using Java Spring Boot and advanced routing features of React, incorporating REST APIs for user authentication, creating, browsing, and tracking task status in real-time, within Agile Framework.",
       "Implemented routing to reduce load times by 75%, enabling seamless page transitions.",
@@ -179,7 +152,7 @@ const experiences = [
     company_name: "Embytes Solutions",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    // date: "Jan 2021 - Feb 2022",
     points: [
       "Developed and maintained backend services for a video conference platform built on top of WebRTC using Java and Spring Framework, ensuring the scalability, performance, and reliability.",
       "Managed version control with Git, providing real-time insights and improving monitoring efficiency by 25%.",
@@ -284,4 +257,91 @@ const projects = [
   
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const projects2 = [
+  {
+    name: "Hospital Management System",
+    description:
+      "Implemented web platform for accessing patient and doctor data using PostgreSQL, Node.js, React. Supporting real-time updates and handles hundreds of concurrent queries with minimal latency.",
+    tags: [
+      {
+        name: "PostgreSQL",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: HMS, // Store multiple images
+    source_code_link: "https://github.com/charantatineni",
+  },
+  {
+    name: "Construction Worker Helmet Detection",
+    description:
+      "Developed an optimized desktop application using Python, Django, Flask, and a trained ResNet model. Achieved 95.6% detection accuracy, utilizing a trained ResNet model with TensorFlow! ",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: CWHD,
+    source_code_link: "https://github.com/charantatineni",
+  },
+  {
+    name: "Job Application Portal",
+    description:
+      "Designed sleek, responsive application for job postings. Optimized database performance using PostgreSQL to handle large datasets, ensuring seamless operation and scalability during peak usage, supporting over 200 applications per minute. ",
+    tags: [
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: JAP,
+    source_code_link: "https://github.com/charantatineni",
+  },
+  {
+    name: "Game Surf",
+    description:
+      "A modern game store platform built as a wrapper for Phaser.io. Features include real-time inventory updates, user reviews. Implements responsive design for optimal mobile experience.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Spring Boot",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Wrapper",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: GS,
+    source_code_link: "https://github.com/charantatineni",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, projects2 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Typewriter } from "react-simple-typewriter";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { wavingRotateEffect } from "../utils/animations";
@@ -27,15 +27,30 @@ const Hero = () => {
         </span>
       </h1>
       <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-        I develop enterprise web applications, user <br className='sm:block hidden' />
-        interfaces and product development
-      </p>
+          <span className="text-white">
+            <Typewriter
+              words={[
+                "I am a Software Engineer",
+                "I am a Full Stack Developer",
+                "I develop enterprise web applications.",
+                "I create user interfaces.",
+                "I specialize in product development.",
+              ]}
+              loop={0} // Infinite loop
+              cursor
+              cursorStyle={<span className="gradient-cursor">|</span>}
+              typeSpeed={50}
+              deleteSpeed={30}
+              delaySpeed={1500}
+            />
+          </span>
+        </p>
     </div>
   </div>
 
        {/* Apply Smooth Waving Rotation to ComputersCanvas */}
       <motion.div
-        variants={wavingRotateEffect(0.3, 2)} // Adjust delay & duration
+        variants={wavingRotateEffect(0.3, 3)} // Adjust delay & duration
         initial="hidden"
         animate="show"
         className="relative w-full h-full flex justify-center items-center"
