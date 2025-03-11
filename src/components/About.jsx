@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import sri from "../assets/sri.png";  // ✅ Correct
+import sri from "../assets/sri.png";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -39,33 +39,36 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-        {/* Image at Top Right */}
-        <div className="absolute translate-x-[-50px] translate-y-[30px] sm:translate-x-[850px] sm:translate-y-[-50px] w-20 sm:w-48">
-        <div className="relative p-[1px] rounded-full bg-gradient-to-r from-teal-700 via-purple-700 to-teal-700 shadow-lg">
-            
-          <img 
-            src={sri}
-            alt="Profile"
-            className="object-contain rounded-lg border-4 border-transparent"
-          />
+      <div className="flex flex-col-reverse sm:flex-row sm:items-start items-center justify-between">
+        <motion.div variants={textVariant()} className="flex-1">
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          >
+            I'm a skilled software developer with experience in building 
+            scalable applications using Java, Python, Spring Boot, and React, 
+            I focus on optimizing performance and ensuring reliability. 
+            Certified in AWS and Azure, I've delivered projects in safety monitoring, healthcare,
+            and product development, project management.
+          </motion.p>
+        </motion.div>
         
-        </div>
-        </div>
-      </motion.div>
+        <motion.div 
+          variants={fadeIn("left", "spring", 0.3, 0.75)}
+          className="sm:w-48 w-32 sm:ml-8 mb-4 sm:mb-0"
+        >
+          <div className="relative p-[1px] rounded-full bg-gradient-to-r from-teal-700 via-purple-700 to-teal-700 shadow-lg">
+            <img 
+              src={sri}
+              alt="Profile"
+              className="rounded-full border-4 border-transparent w-full h-full object-cover"
+            />
+          </div>
+        </motion.div>
+      </div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in building 
-        scalable applications using Java, Python, Spring Boot, and React, 
-        I focus on optimizing performance and ensuring reliability. 
-        Certified in AWS and Azure, I’ve delivered projects in safety monitoring, healthcare,
-         and product development, project management.
-      </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
