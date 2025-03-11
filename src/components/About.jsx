@@ -39,7 +39,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <div className="flex flex-col-reverse sm:flex-row sm:items-start items-center justify-between">
+      <div className="flex flex-col-reverse sm:flex-row sm:items-start items-center justify-between gap-8">
         <motion.div variants={textVariant()} className="flex-1">
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -57,7 +57,7 @@ const About = () => {
         
         <motion.div 
           variants={fadeIn("left", "spring", 0.3, 0.75)}
-          className="sm:w-48 w-32 sm:ml-8 mb-4 sm:mb-0"
+          className="sm:w-48 w-36 sm:ml-8 mb-8 sm:mb-0 flex-shrink-0"
         >
           <div className="relative p-[1px] rounded-full bg-gradient-to-r from-teal-700 via-purple-700 to-teal-700 shadow-lg">
             <img 
