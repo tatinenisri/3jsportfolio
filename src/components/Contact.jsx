@@ -39,7 +39,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Charan",
           from_email: form.email,
-          to_email: "charantatineni@gmail.com",
+          to_email: "charantatineni11@gmail.com",
           message: form.message,
         },
         'Q6OrgXKIat1CzV6ZF'  // EmailJS Public Key
